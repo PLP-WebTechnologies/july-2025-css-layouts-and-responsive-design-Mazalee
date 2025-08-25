@@ -1,0 +1,376 @@
+@import url("https://fonts.googleapis.com/css2?family=Jost:wght@400;500;600&display=swap");
+
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: inherit;
+}
+html {
+  box-sizing: border-box;
+  overflow-x: hidden;
+  font-family: "Jost", sans-serif;
+}
+body {
+  font-size: 1.5rem;
+  line-height: 1.867;
+  background-color: #ffffff;
+}
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: "DM Sans", system-ui;
+}
+a {
+  text-decoration: none;
+}
+
+header {
+  margin-inline: 2rem;
+}
+
+header h1 {
+  display: flex;
+  text-transform: uppercase;
+  font-size: 1.2rem;
+  margin-top: 1rem;
+}
+
+.header-nav {
+  display: flex;
+  flex-direction: column;
+}
+
+.header-nav ul {
+  list-style: none;
+}
+
+.header-nav ul li {
+  font-size: 0.875rem;
+}
+
+.header-nav ul li a {
+  text-decoration: none;
+  color: #000;
+}
+
+.btn {
+  background-color: red;
+  padding: 0.375rem 1.5rem;
+  color: #ffffff;
+  border: none;
+  border-radius: 5px;
+  margin-top: 1rem;
+}
+
+#home {
+  text-align: center;
+  margin-inline: 2rem;
+  margin-top: 2rem;
+}
+
+#home h2 {
+  text-align: center;
+  font-size: 1.25rem;
+}
+
+#home p {
+  font-size: 0.875rem;
+}
+
+table {
+  margin-inline: auto;
+  margin-top: 3rem;
+  text-align: center;
+}
+
+caption {
+  text-transform: uppercase;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+th {
+  font-size: 1rem;
+  padding-inline: 1rem;
+}
+
+td {
+  font-size: 0.875rem;
+}
+
+#contact-section {
+  background-color: rgb(236, 136, 198);
+}
+
+.contact-form-holder {
+  position: relative;
+  margin-top: 2rem;
+  padding-block: 2rem;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  margin-inline: 2rem;
+}
+
+.form-children input,
+.form-children textarea {
+  width: 100%;
+  border: none;
+  padding-block: 40px 20px;
+  padding-inline: 15px;
+  background-color: inherit;
+  color: #ffffff;
+}
+
+input::placeholder,
+textarea::placeholder {
+  color: #ffffff;
+  font-size: 15px;
+}
+
+.underline-contact {
+  width: 100%;
+  height: 1.5px;
+  background-color: #ffffff;
+}
+
+.form-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 0.5rem 2rem;
+  margin-top: 4rem;
+  margin-bottom: 2rem;
+  text-transform: uppercase;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  font-weight: medium;
+  font-size: 12px;
+}
+
+#projects {
+  margin-inline: auto;
+  text-align: center;
+}
+
+#projects h2 {
+  text-transform: uppercase;
+  margin-top: 3rem;
+  font-size: 1.25rem;
+  margin-bottom: 1rem;
+}
+
+.project-inner {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 0.875rem;
+}
+
+#services {
+  margin-inline: auto;
+  text-align: center;
+  margin-top: 3rem;
+}
+
+#services h2 {
+  font-size: 1.25rem;
+  text-transform: uppercase;
+}
+
+#services p {
+  font-size: 1rem;
+}
+
+.media {
+  margin-top: 3rem;
+}
+
+.services p {
+  font-size: 1rem;
+}
+
+.skills {
+  margin-top: 3rem;
+  display: flex;
+  flex-direction: column;
+  margin-inline: 2rem;
+}
+
+.skills-header h3 {
+  font-size: 1.25rem;
+}
+
+.skills-header p {
+  font-size: 0.875rem;
+}
+
+.skills-header {
+  margin-top: 1rem;
+}
+
+footer {
+  background-color: rgb(236, 136, 198);
+  margin-top: 4rem;
+  margin-inline: auto;
+  text-align: center;
+  padding-bottom: 2rem;
+  padding-top: 1rem;
+  color: #ffffff;
+}
+
+.personal p {
+  font-size: 1rem;
+}
+
+.personal p:last-child {
+  font-style: italic;
+}
+
+.socials {
+  font-size: 1rem;
+}
+
+.socials a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+@media only screen and (min-width: 768px) {
+  header {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1rem;
+  }
+  header h1 {
+    font-size: 1.75rem;
+  }
+  .header-nav {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+  }
+  .header-nav ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    margin-top: 1rem;
+  }
+  .header-nav ul li {
+    font-size: 1.25rem;
+  }
+
+  #home {
+    margin-top: 4rem;
+  }
+
+  #home h2 {
+    font-size: 2rem;
+  }
+  #home p {
+    font-size: 1.25rem;
+  }
+  .btn {
+    font-size: 1rem;
+  }
+
+  caption {
+    font-size: 1.75rem;
+  }
+  th {
+    font-size: 1.25rem;
+  }
+  td {
+    font-size: 1rem;
+  }
+
+  #contact-section {
+    margin-inline: 3rem;
+    margin-top: 5rem;
+    border-radius: 10px;
+  }
+  input::placeholder,
+  textarea::placeholder {
+    font-size: 1.25rem;
+  }
+  .form-btn {
+    padding-block: 0.875rem;
+    font-size: 1.25rem;
+  }
+
+  #projects h2 {
+    font-size: 2rem;
+  }
+  .project-inner {
+    font-size: 1.5rem;
+  }
+
+  #services h2 {
+    font-size: 2rem;
+  }
+  #services p {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+  }
+
+  .skills-header h3 {
+    font-size: 1.875rem;
+  }
+
+  .personal p {
+    font-size: 1.5rem;
+  }
+
+  .socials {
+    margin-top: 1rem;
+    font-size: 1.5rem;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  header {
+    margin-inline: 3rem;
+  }
+  header h1 {
+    font-size: 3rem;
+  }
+  .header-nav {
+    gap: 4rem;
+  }
+  .header-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.25rem;
+    border-radius: 10px;
+  }
+  .header-nav ul li {
+    font-size: 1.5rem;
+  }
+
+  .skills {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 3rem;
+  }
+
+  .skills-header {
+    display: grid;
+    place-items: center;
+    align-content: center;
+    border: 1px solid #000000;
+    border-radius: 10px;
+    padding: 1rem;
+  }
+}
